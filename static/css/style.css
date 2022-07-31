@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+}
+
+.cus-carousel {
+    background: rgb(99, 98, 98);
+    color: white;
+    background-position: center fixed;
+    background-size: cover;
+    object-fit: scale-down;
+}
+
+.cus-carousel img {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.sign-upp span {
+    text-align: center;
+    font-size: 50px;
+    opacity: 50%;
+    border: 1px solid;
+    border-radius: 50%;
+    display: block;
+    width: 76px;
+    margin: auto;
+}
+
+
+/* Products */
+
+.card-img-top {
+    height: 160px;
+}
+
+
+/*Footer*/
+
+.footer .f-margin {
+    border: 1px solid;
+    opacity: 0.5;
+}

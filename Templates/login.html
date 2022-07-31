@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Log In Here{% endblock title %}
+{% block body %}
+<div style="    margin-bottom: 85px;" class="container sign-upp pt-4">
+    <span><i class="fa-solid fa-user"></i></span>
+    <h2 class="text-center mt-2 mb-4">Log In Account</h2>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="text" name="loguname" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="logpass" class="form-control" required>
+                </div>
+                <input type="Submit" value="Log In" class="btn btn-primary">
+            </form>
+            <div class="login mb-4">
+                <p>Do Not have any account? than-<a style="text-decoration: none;" href="{% url 'signup' %}">Create account</a></p>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>{% endblock body %}
